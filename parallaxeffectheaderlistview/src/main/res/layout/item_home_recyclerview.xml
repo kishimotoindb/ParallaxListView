@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bearabitcf.parallaxeffectheaderlistview.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bearabitcf.parallaxeffectheaderlistview.MainActivity">
+
+    <!--背景按钮-->
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/front"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/front">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="#80e0"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#900e"
+            android:gravity="center"
+            android:text="取消"
+            android:padding="5dp"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+    <!--前景条目-->
+    <LinearLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="#fff"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/icon"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_front_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Hello World!"/>
+
+            <TextView
+                android:id="@+id/item_front_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Hello World!"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_front_msgCount"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/msg_count"
+            android:gravity="center"
+            android:text="1"
+            />
+
+    </LinearLayout>
+</com.bearabitcf.parallaxeffectheaderlistview.SwipeLayout>
